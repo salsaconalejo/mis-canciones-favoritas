@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
   <style>
     body {
@@ -11,16 +11,17 @@
       font-family: Arial, sans-serif;
       text-align: center;
       margin: 0;
-      padding: 0 10px;
+      padding: 0;
     }
 
-    .encabezado-musical {
-      margin-top: 20px;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     .encabezado-musical img {
       width: 80px;
-      height: auto;
       display: block;
       margin: 0 auto;
     }
@@ -31,72 +32,75 @@
       margin: 10px 0;
     }
 
-    h2 {
-      color: orange;
-      margin-top: 30px;
-    }
-
     .categoria {
-      overflow-x: auto;
+      margin-top: 40px;
     }
 
-    .categoria table {
+    .categoria h2 {
+      color: orange;
+    }
+
+    table {
       width: 100%;
-      max-width: 950px;
-      margin: 0 auto;
       border-collapse: collapse;
-      overflow-x: auto;
-      display: block;
+      margin-top: 15px;
     }
 
-    .categoria table th, .categoria table td {
+    th, td {
       border: 1px solid #444;
       padding: 10px;
       text-align: left;
-      min-width: 150px;
     }
 
-    .categoria table th {
+    th {
       background-color: #111;
       color: gold;
     }
 
-    .categoria table td a {
+    td a {
       color: cyan;
       font-weight: bold;
       text-decoration: none;
     }
 
-    .categoria table td a:hover {
+    td a:hover {
       text-decoration: underline;
     }
 
     @media (max-width: 600px) {
       .encabezado-musical h1 {
         font-size: 1.4rem;
+        padding: 0 10px;
       }
 
-      h2 {
+      .categoria h2 {
         font-size: 1.2rem;
       }
 
-      .categoria table th, .categoria table td {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      th, td {
         font-size: 14px;
         padding: 8px;
+        min-width: 120px;
       }
     }
   </style>
 </head>
+
 <body>
+  <div class="container">
+    <!-- Encabezado -->
+    <div class="encabezado-musical">
+      <img src="pareja_fondo_blanco.png" alt="Pareja bailando" />
+      <h1>🎵 Portafolio Musical de Alejo Gaviria 🎵</h1>
+    </div>
 
-  <!-- 🎶 Encabezado -->
-  <div class="encabezado-musical">
-    <img src="pareja_fondo_blanco.png" alt="Pareja bailando">
-    <h1>🎵 Portafolio Musical de Alejo Gaviria 🎵</h1>
-  </div>
-
-  <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
-
+    <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
   <!-- 🎷 Salsa -->
   <div class="categoria">
     <h2>🎷 Salsa</h2>
@@ -133,6 +137,18 @@
       <tr><td>Livin' On A Prayer</td><td>Bon Jovi</td><td><a href="https://www.youtube.com/watch?v=oabJ6vvz0OI" target="_blank">Escuchar</a></td></tr>
     </table>
   </div>
+<!-- Pie de página -->
+<footer style="background-color: #0b0b0b; padding: 30px 15px; margin-top: 60px;">
+  <div style="text-align: center; color: #ccc; font-family: Arial, sans-serif;">
+    <h3 style="color: #f0c674; font-size: 1.2rem;">📜 Derechos de Autor</h3>
+    <p>Este portafolio ha sido desarrollado por Héctor Alejandro Gaviria Marín con fines profesionales.</p>
+    <p style="margin-top: 10px;">
+      Todos los proyectos, textos y diseños son de autoría propia.<br>
+      Está prohibida su copia, modificación o distribución sin autorización.
+    </p>
+    <p style="margin-top: 15px; color: #999;">© 2025 <strong>Héctor Alejandro Gaviria Marín</strong>. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 </body>
 </html>
