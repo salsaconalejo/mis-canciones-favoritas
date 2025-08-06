@@ -10,6 +10,8 @@
       color: white;
       font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 0 10px;
     }
 
     .encabezado-musical {
@@ -19,6 +21,8 @@
     .encabezado-musical img {
       width: 80px;
       height: auto;
+      display: block;
+      margin: 0 auto;
     }
 
     .encabezado-musical h1 {
@@ -27,57 +31,68 @@
       margin: 10px 0;
     }
 
-    @media (max-width: 480px) {
-      .encabezado-musical img {
-        width: 60px;
-      }
-
-      .encabezado-musical h1 {
-        font-size: 1.4rem;
-      }
+    h2 {
+      color: orange;
+      margin-top: 30px;
     }
 
     .categoria {
-      margin-top: 40px;
+      overflow-x: auto;
     }
 
-    table {
-      width: 90%;
+    .categoria table {
+      width: 100%;
+      max-width: 950px;
       margin: 0 auto;
       border-collapse: collapse;
+      overflow-x: auto;
+      display: block;
     }
 
-    th, td {
-      border-bottom: 1px solid #444;
-      padding: 8px;
+    .categoria table th, .categoria table td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: left;
+      min-width: 150px;
     }
 
-    th {
+    .categoria table th {
+      background-color: #111;
       color: gold;
     }
 
-    td a {
+    .categoria table td a {
       color: cyan;
+      font-weight: bold;
       text-decoration: none;
     }
 
-    td a:hover {
+    .categoria table td a:hover {
       text-decoration: underline;
     }
 
-    h2 {
-      color: orange;
+    @media (max-width: 600px) {
+      .encabezado-musical h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .categoria table th, .categoria table td {
+        font-size: 14px;
+        padding: 8px;
+      }
     }
   </style>
 </head>
-
 <body>
+
   <!-- 🎶 Encabezado -->
   <div class="encabezado-musical">
-    <img src="pareja.png" alt="Pareja bailando">
-    <h1>
-      🎵 Portafolio Musical de Alejo Gaviria 🎵
-    </h1>
+    <img src="pareja_fondo_blanco.png" alt="Pareja bailando">
+    <h1>🎵 Portafolio Musical de Alejo Gaviria 🎵</h1>
   </div>
 
   <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
@@ -87,11 +102,11 @@
     <h2>🎷 Salsa</h2>
     <table>
       <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
-      <tr><td>No queda nada</td><td>Luis Pabón</td><td><a href="https://www.youtube.com/watch?v=w1W6PM_K7JY&ab_channel=HelmanHerneyQuiros" target="_blank">Escuchar</a></td></tr>
-      <tr><td>Un Inmmortal</td><td>kike cruz y la Orquesta Royal</td><td><a href="https://www.youtube.com/watch?v=HL45BEFcogM&ab_channel=ObdulioZapata" target="_blank">Escuchar</a></td></tr>
-      <tr><td>Once Trece</td><td>Clandeskina Orquesta</td><td><a href="https://www.youtube.com/watch?v=HRt8Ho_eyEM&ab_channel=DavudGallego" target="_blank">Escuchar</a></td></tr>
-      <tr><td>Sola te Dejare</td><td>Ray Barretto</td><td><a href="https://www.youtube.com/watch?v=NTZDFAB4bj0&ab_channel=Luckylouie522" target="_blank">Escuchar</a></td></tr>
-      <tr><td>Bochinchero</td><td>Tito Allen</td><td><a href="https://www.youtube.com/watch?v=5unuiFJ7dVU&ab_channel=TitoAllen-Topic" target="_blank">Escuchar</a></td></tr>
+      <tr><td>No queda nada</td><td>Luis Pabón</td><td><a href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Un Inmortal</td><td>Kike Cruz y la Orquesta Royal</td><td><a href="https://www.youtube.com/watch?v=HL45BEFcogM" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Once Trece</td><td>Clandeskina Orquesta</td><td><a href="https://www.youtube.com/watch?v=HRt8Ho_eyEM" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Sola te dejaré</td><td>Ray Barretto</td><td><a href="https://www.youtube.com/watch?v=NTZDFAB4bj0" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Bochinchero</td><td>Tito Allen</td><td><a href="https://www.youtube.com/watch?v=5unuiFJ7dVU" target="_blank">Escuchar</a></td></tr>
       <tr><td>Pena y Dolor</td><td>Lebron Brothers</td><td><a href="https://www.youtube.com/watch?v=ImOs63-PVHo&ab_channel=LeBr%C3%B3nBrothers-Topic" target="_blank">Escuchar</a></td></tr>
       <tr><td>Oye la Noticia</td><td>Ray Barretto</td><td><a href="https://www.youtube.com/watch?v=42TpQko_kos&ab_channel=Luckylouie522" target="_blank">Escuchar</a></td></tr>
       <tr><td>Arroz con Habichuela</td><td>El Gran Combo de Puerto Rico</td><td><a href="https://www.youtube.com/watch?v=AtbBtFo-e_s&ab_channel=ChinoIjobi" target="_blank">Escuchar</a></td></tr>
@@ -109,13 +124,16 @@
     </table>
   </div>
 
+  <!-- 🎸 Rock -->
   <div class="categoria">
     <h2>🎸 Rock</h2>
     <table>
       <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
-      <tr><td>Estranged</td><td>Guns N' Roses</td><td><a href="https://www.youtube.com/watch?v=cm5VIM7ynQQ&ab_channel=NenadBo%C5%A1kovi%C4%87" target="_blank">Escuchar</a></td></tr>
-      <tr><td>Livin' On A Prayer</td><td>Bon Jovi</td><td><a href="https://www.youtube.com/watch?v=oabJ6vvz0OI&ab_channel=Rock%26RollHallofFame" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Estranged</td><td>Guns N' Roses</td><td><a href="https://www.youtube.com/watch?v=cm5VIM7ynQQ" target="_blank">Escuchar</a></td></tr>
+      <tr><td>Livin' On A Prayer</td><td>Bon Jovi</td><td><a href="https://www.youtube.com/watch?v=oabJ6vvz0OI" target="_blank">Escuchar</a></td></tr>
     </table>
   </div>
+
 </body>
 </html>
+
