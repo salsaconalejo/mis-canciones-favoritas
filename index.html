@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,46 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
   <style>
-  .encabezado-musical {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    text-align: center;
-    margin-top: 20px;
-  }
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-  .encabezado-musical img {
-    width: 60px;
-    height: auto;
-  }
+    .encabezado-musical {
+      margin-top: 20px;
+    }
 
-  .encabezado-musical h1 {
-    color: gold;
-    font-size: 1.8rem;
-    margin: 0;
-  }
-
-  @media (max-width: 480px) {
     .encabezado-musical img {
-      width: 50px;
+      width: 80px;
+      height: auto;
     }
 
     .encabezado-musical h1 {
-      font-size: 1.4rem;
+      color: gold;
+      font-size: 2rem;
+      margin: 10px 0;
     }
-  }
-</style>
 
-<div class="encabezado-musical">
-  <img src="pareja.png" alt="Pareja bailando">
-  <h1>
-    <span style="color: violet;">🎵</span> Portafolio Musical de Alejo Gaviria <span style="color: violet;">🎵</span>
-  </h1>
-</div>
+    @media (max-width: 480px) {
+      .encabezado-musical img {
+        width: 60px;
+      }
+
+      .encabezado-musical h1 {
+        font-size: 1.4rem;
+      }
+    }
+
+    .categoria {
+      margin-top: 40px;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border-bottom: 1px solid #444;
+      padding: 8px;
+    }
+
+    th {
+      color: gold;
+    }
+
+    td a {
+      color: cyan;
+      text-decoration: none;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🎶 Encabezado -->
+  <div class="encabezado-musical">
+    <img src="pareja.png" alt="Pareja bailando">
+    <h1>
+      🎵 Portafolio Musical de Alejo Gaviria 🎵
+    </h1>
+  </div>
+
   <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
 
+  <!-- 🎷 Salsa -->
   <div class="categoria">
     <h2>🎷 Salsa</h2>
     <table>
@@ -80,6 +117,5 @@
       <tr><td>Livin' On A Prayer</td><td>Bon Jovi</td><td><a href="https://www.youtube.com/watch?v=oabJ6vvz0OI&ab_channel=Rock%26RollHallofFame" target="_blank">Escuchar</a></td></tr>
     </table>
   </div>
-
 </body>
 </html>
