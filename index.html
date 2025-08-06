@@ -66,29 +66,41 @@
     td a:hover {
       text-decoration: underline;
     }
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 1rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  td a {
+  font-size: 1rem;
+  padding: 6px 10px;
+}
+  th, td {
+    font-size: 14px;
+    padding: 10px 8px;
+    min-width: 120px;
+  }
 
-    @media (max-width: 600px) {
-      .encabezado-musical h1 {
-        font-size: 1.4rem;
-        padding: 0 10px;
-      }
+  h1, h2, h3 {
+    font-size: 1.3rem;
+  }
 
-      .categoria h2 {
-        font-size: 1.2rem;
-      }
+  .encabezado-musical h1 {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
 
-      table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
+  .categoria h2 {
+    font-size: 1.2rem;
+  }
 
-      th, td {
-        font-size: 14px;
-        padding: 8px;
-        min-width: 120px;
-      }
-    }
+  .encabezado-musical p {
+    font-size: 1rem;
+  }
+}
+
   </style>
 </head>
 
