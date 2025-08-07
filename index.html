@@ -165,12 +165,17 @@
                 0% {
                   transform: scale(1);
                   opacity: 0.9;
-          }
-          100% {
-              transform: scale(1.05);
-              opacity: 1;
-        }
-           @media screen and (max-width: 600px) {
+              }
+              50% {
+                transform: scale(1.05);
+                opacity: 1;
+              }
+              100%{
+                 transform: translateY(0px) scale(1);
+                opacity: 0.9
+              }
+            }
+            @media screen and (max-width: 600px) {
               .titulo-salsa {
                 font-size: 2rem;
                 flex-direction: column;
@@ -297,6 +302,17 @@
           </td>
         </tr>
         <tr>
+          <tr>
+          <td>Yolanda Dime Que Si</td>
+          <td>Chocolate Armenteros</td>
+          <td>
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=cknEr3oazls&list=RDcknEr3oazls&start_radio=1&ab_channel=ChocolateArmenteros-Topic"target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span class="you">You</span><span class="tube">Tube</span>
+            </a>
+          </td>
+        </tr>
+        <tr> 
           <td>Envidia e Hipocresía</td>
           <td>La Salsa Mayor</td>
           <td>
@@ -331,6 +347,16 @@
           <td>Orquesta Zodiac</td>
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=p5DGP5LltM8&ab_channel=OrquestaZodiac-Topic" target="_blank">
+                <i class="fab fa-youtube"></i>
+                <span class="you">You</span><span class="tube">Tube</span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>Chocolate Sabroso</td>
+          <td>Chocolate Armenteros</td>
+          <td>
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=2kfCdWmtp7o&list=RD2kfCdWmtp7o&start_radio=1&ab_channel=ChocolateArmenteros-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
