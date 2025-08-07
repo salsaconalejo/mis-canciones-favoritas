@@ -137,8 +137,8 @@
         .tube {
           font-weight: normal;
         }
-           .titulo-salsa {
-            font-family: 'Lobster', cursive; /* cambia a estilo manuscrito */
+          .titulo-salsa {
+            font-family: 'Lobster', cursive;
             font-size: 3rem;
             color: orange;
             display: flex;
@@ -147,7 +147,11 @@
             gap: 12px;
             margin: 50px 0 30px 0;
             text-shadow: 2px 2px 6px black;
-            animation: brillar 2s ease-in-out infinite alternate;
+            animation: rebote 2s ease-in-out infinite alternate;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: rgba(255,165,0,0.08);
+            box-shadow: 0 0 10px rgba(255,165,0,0.2);
           }
     
           .titulo-salsa .icono {
@@ -163,16 +167,13 @@
          /* Animación suave */
             @keyframes brillar {
                 0% {
-                  transform: scale(1);
-                  opacity: 0.9;
+                   transform: translateY(0px) scale(1);
               }
               50% {
-                transform: scale(1.05);
-                opacity: 1;
+                transform: translateY(-6px) scale(1.05
               }
               100%{
                  transform: translateY(0px) scale(1);
-                opacity: 0.9
               }
             }
             @media screen and (max-width: 600px) {
@@ -197,7 +198,8 @@
     <!-- 🎷 Salsa Herencia Latina 🥁 -->
     <div class="categoria">
       <div class="titulo-salsa">
-          🎷 <span class="texto">Salsa Herencia Latina</span> 🥁
+            <span class="icono">🎷</span>
+            <span class="texto">Salsa Herencia Latina</span>
       </div>
       <table>
         <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
