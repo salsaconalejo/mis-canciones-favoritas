@@ -98,46 +98,44 @@
     }
 
     /* ✅ Estilo final del botón de YouTube */
-    .youtube-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background-color: #ff0000;
-        color: white;
-        font-size: 0.9rem;
-        font-weight: bold;
-        padding: 6px 12px;
-        border-radius: 6px;
-        text-decoration: none;
-        transition: background 0.3s ease;
-        border: none;
-    }
-    .youtube-btn:hover {
-      background-color: #cc0000;
-    }
-    .youtube-btn .you {
-        color: black;
-    }
-    .youtube-btn:hover {
-      background-color: #cc0000;
-      color: white;
-    }
-    .youtube-btn .you {
-        color: black;
-        font-weight: bold;
-    }
-    .youtube-btn .tube {
-        color: white;
-    }
+        .youtube-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 2px; /* nuevo: reduce separación entre ícono y texto */
+          background-color: #ff0000;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: bold;
+          font-family: 'Arial', sans-serif; /* <- corregido */
+          padding: 6px 12px;
+          border-radius: 6px;
+          text-decoration: none;
+          transition: background 0.3s ease;
+          border: none;
+        }
+        
+        .youtube-btn:hover {
+          background-color: #cc0000;
+          color: white;
+        }
+        
+        .youtube-btn .you {
+          font-weight: bold;
+        }
+        
+        .youtube-btn .tube {
+          margin-left: 1px; /* 👈 aquí ajustas la separación */
+          font-weight: bold;
+        }
     .you {
       font-weight: bold;
     }
 
-    .tube {
-      font-weight: normal;
-    }
-  </style>
-</head>
+        .tube {
+          font-weight: normal;
+        }
+      </style>
+    </head>
 
 <body>
   <div class="container">
@@ -158,7 +156,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=AcwPUsPOzzg&list=RDAcwPUsPOzzg&start_radio=1&ab_channel=LatinTempo-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -168,7 +166,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -178,7 +176,7 @@
           <td>
              <a class="youtube-btn" href="https://www.youtube.com/watch?v=auUjyuQw1UA&ab_channel=Papaito-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -188,7 +186,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=HL45BEFcogM" target="_blank"">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -198,7 +196,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=edslIkuvkkw&ab_channel=WillieRodriguezAndHisOrchestra-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -208,7 +206,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=Z-fzYn6SJaQ&ab_channel=GERSONSALSAPRODUCCIONES" target="_blank"">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -218,7 +216,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=hABQSp9Q2R4&ab_channel=salsamasnada"target="_blank" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -228,7 +226,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=xWjYa6cpw7Q&ab_channel=SalsaKingMusic"target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -238,7 +236,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=qUvhikdoGpM&ab_channel=TonyPab%C3%B3n-Topic"target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -248,7 +246,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=YrT1qftInKE&ab_channel=LaSalsaMayor-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -258,7 +256,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=P-CNlZeofd4&ab_channel=PeteRodriguez" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -268,7 +266,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=RXguXaXUYAI&list=RDRXguXaXUYAI&start_radio=1&ab_channel=ImpactoCrea-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -278,7 +276,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=p5DGP5LltM8&ab_channel=OrquestaZodiac-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -288,7 +286,7 @@
           <td>
             <a class="youtube-btn" href="https://www.youtube.com/watch?v=stn5PgDsHC0&ab_channel=TitoRojas-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+                <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
         </tr>
@@ -298,7 +296,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=u5rEC9qlGks&ab_channel=FaniaRecords" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -308,7 +306,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=kSk9buGjDrE&ab_channel=EddiePalmieri-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -318,7 +316,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=B_CtL-rwzBs&ab_channel=IsmaelQuintana-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -328,7 +326,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=HRt8Ho_eyEM" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -338,7 +336,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=guPW676eLAc&list=RDguPW676eLAc&start_radio=1&ab_channel=LatinTempo-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -348,7 +346,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=NTZDFAB4bj0" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -358,7 +356,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=5unuiFJ7dVU" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -368,7 +366,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=K3353aerIKI&ab_channel=BobbyValent%C3%ADn-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -378,7 +376,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=sc7l2VJ0MuQ&ab_channel=Andr%C3%A9sFelipeGiraldoD%C3%ADaz" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -388,7 +386,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=809IFwO_chM&ab_channel=EddiePalmieri-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -398,7 +396,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=RoBEO89oGCA&ab_channel=LarryHarlow-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -408,7 +406,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=gb2rVStDeao&ab_channel=FrankieDanteCerda-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -418,7 +416,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=O2NMMFAq3GU&ab_channel=TrioLaRosa-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -428,7 +426,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=LBh1OjIbng4&ab_channel=RumbaEnElBatey" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -438,7 +436,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=RUAh0lL8OFE&ab_channel=LaSonoraPonce%C3%B1a-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -448,7 +446,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=gXcMHnfl2Dg&list=RDgXcMHnfl2Dg&start_radio=1&ab_channel=LatinTempo-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -458,7 +456,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=H3fcZjfYTpE&ab_channel=bongosero11" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -468,7 +466,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=ImOs63-PVHo&ab_channel=LeBr%C3%B3nBrothers-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -478,7 +476,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=BcGfqrmvLqw&ab_channel=juandiegogallegomorales" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -488,7 +486,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=42TpQko_kos&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -498,7 +496,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=h1CvImS2TXU&ab_channel=OrquestaArag%C3%B3nOfficial" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -508,7 +506,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=AtbBtFo-e_s&ab_channel=ChinoIjobi" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -518,7 +516,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=7TVjwMkIcnQ&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -528,7 +526,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=bqxlXbEI_Y4&ab_channel=JohnnyColon-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -538,7 +536,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=jAli0gCaXW4&ab_channel=RichieRay%26BobbyCruz-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -548,7 +546,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=b8ThQB4rIJc&ab_channel=RobertoRoena-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -558,7 +556,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=2jXtJxtoRd8&ab_channel=FaniaRecords" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -568,7 +566,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=fDj-CSQDbsY&ab_channel=FaniaRecords" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -578,7 +576,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=-vf8u5uWiVo&ab_channel=OrquestaLaConspiraci%C3%B3n-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -588,7 +586,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=d7NlZhUVFD0&ab_channel=TheOyenegro" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -598,7 +596,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=72FY0KoT4nI&ab_channel=LarryHarlow-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -608,7 +606,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=xZLbq18jsCI&ab_channel=Salsosito" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -618,7 +616,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=aXYcwm-WU_E&ab_channel=Juli%C3%A1nMorenoEchavarr%C3%ADa" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -628,7 +626,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=kopCVizxE74&ab_channel=WayneGorbea-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -638,7 +636,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=ZpBJeQxxjhw&ab_channel=LatinTempo-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -648,7 +646,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=DRD43y5AAAI&ab_channel=LeBr%C3%B3nBrothers" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -658,7 +656,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=oJk1wxC5mJU&ab_channel=FrasesEnSalsa" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -668,7 +666,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=LdgwW2Puiyg&ab_channel=RichieRay%26BobbyCruz-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -678,7 +676,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=qZxKQ7oVzZc&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -688,7 +686,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=QyHu7Xnc8qg&ab_channel=AgustinArceandHisOrchestra-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -698,7 +696,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=qZxKQ7oVzZc&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -708,7 +706,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=6n-Q1a9cFgM&ab_channel=BobbyCruz-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -718,7 +716,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=QAuL-P9LxxQ&ab_channel=LorenaSalsera" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -728,7 +726,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=LVDsQ7LFtYc&ab_channel=OrquestaLaTerrifica-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -738,7 +736,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=qtXmeZXhA-w&ab_channel=OrquestaLaConspiraci%C3%B3n-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -748,7 +746,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=WvRRZuaHcfw&ab_channel=ChuloRecords" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -758,7 +756,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=A3ly5Kxqv0U&ab_channel=Codiscos" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -768,7 +766,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=Hk9a9fIt44w&ab_channel=MikePerez-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -778,7 +776,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=jkRWh6z4UPU&ab_channel=ElG%C3%BCireo" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -788,7 +786,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=uxH7XNoJj-0&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -798,7 +796,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=hoF1GmsWkBI&ab_channel=RobertoRoena-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -808,7 +806,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=SWlbxpcFSIY&ab_channel=OrquestaLaConspiraci%C3%B3n-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -818,7 +816,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=x5pHFQd88io&ab_channel=MulatuAstatke-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -828,7 +826,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=ScpncnDHgQc&ab_channel=latarimadelasalsa" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -838,7 +836,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=0MX83WqINMA&ab_channel=Monguito-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -848,7 +846,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=W2ZyFlC9UC0&ab_channel=JohnnyPacheco-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -858,7 +856,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=YHr-5s_fJMU&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -868,7 +866,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=YHr-5s_fJMU&ab_channel=Luckylouie522" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -878,7 +876,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=h14I7moKG6g&ab_channel=salsamasnada" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -888,7 +886,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=3Rj0i3kz6Bw&ab_channel=JohanM.Turizo" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -898,7 +896,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=p3fWohgZLc8&ab_channel=EddieMaldonado-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -908,7 +906,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=VRbEMFBVLN8&ab_channel=NahinGquilEc" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -918,7 +916,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=OosiWbad_Zg&ab_channel=JoeyPastrana-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -928,7 +926,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=ZzNFNwK1N1c&ab_channel=LeBr%C3%B3nBrothers-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
@@ -938,7 +936,7 @@
   <td>
     <a class="youtube-btn" href="https://www.youtube.com/watch?v=nhgZjyXe3EM&ab_channel=LatinTempo-Topic" target="_blank">
       <i class="fab fa-youtube"></i>
-      <span class="you">You</span><span class="tube">&nbsp;Tube</span>
+      <span class="you">You</span><span class="tube">Tube</span>
     </a>
   </td>
 </tr>
