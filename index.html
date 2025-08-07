@@ -186,6 +186,42 @@
                 margin: 30px 0 20px 0;
               }
             }
+            .titulo-principal {
+                font-family: 'Anton', sans-serif;
+                font-size: 1.9rem;
+                color: gold;
+                text-shadow: 2px 2px 4px black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 20px 0 10px 0;
+                animation: zoomin 2s ease-in-out infinite alternate;
+              }
+
+            .destacado {
+              color: orange;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+            @keyframes zoomin {
+                0% {
+                  transform: scale(1);
+              }
+              100% {
+              transform: scale(1.05);
+              }
+            }   
+             @media screen and (max-width: 600px) {
+              .titulo-principal {
+              font-size: 1.4rem;
+              flex-wrap: wrap;
+              text-align: center;
+            }
+          }
+            .titulo-principal span.destacado {
+              margin-left: 5px;
+            }
       </style>
     </head>
 
@@ -194,7 +230,9 @@
     <!-- Encabezado -->
     <div class="encabezado-musical">
       <img src="pareja_fondo_blanco.png" alt="Pareja bailando" />
-      <h1>🎵 Portafolio Musical de Alejo Gaviria 🎵</h1>
+      <h1 class="titulo-principal">
+          🥁 <span class="destacado">Colección Sonora</span> de Alejo Gaviria
+      </h1>
     </div>
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
     <!-- 🎷 Salsa Herencia Latina 🥁 -->
