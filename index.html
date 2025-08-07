@@ -187,16 +187,22 @@
               }
             }
             .titulo-principal {
-                font-family: 'Anton', sans-serif;
-                font-size: 1.9rem;
-                color: gold;
-                text-shadow: 2px 2px 4px black;
+                font-family: 'Lobster', cursive;
+                font-weight: normal;
+                font-size: 2.4rem;
+                color: orange;
+                text-shadow: 2px 2px 6px black;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
                 margin: 20px 0 10px 0;
                 animation: zoomin 2s ease-in-out infinite alternate;
+                background-color: rgba(255, 165, 0, 0.08);
+                box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+                padding: 10px 20px;
+                border-radius: 12px;
+                flex-wrap: wrap;
               }
 
             .destacado {
@@ -212,16 +218,40 @@
               transform: scale(1.05);
               }
             }   
-             @media screen and (max-width: 600px) {
-              .titulo-principal {
-              font-size: 1.4rem;
-              flex-wrap: wrap;
-              text-align: center;
-            }
-          }
+             media screen and (max-width: 600px) {
+                .titulo-principal {
+                  font-size: 1.6rem;
+                  gap: 6px;
+                  padding: 8px 12px;
+                  text-align: center;
+                  flex-direction: column;
+                }
+                .tambor {
+                  font-size: 1.8rem;
+                }
+              }
             .titulo-principal span.destacado {
               margin-left: 5px;
             }
+            .nombre {
+              font-style: italic;
+            color: gold;
+          }
+            .tambor {
+                font-size: 2.2rem;
+                animation: rebote-tambor 2.5s ease-in-out infinite;
+              }
+             @keyframes rebote-tambor {
+                  0% {
+                    transform: translateY(0px) rotate(0deg);
+                  }
+                  50% {
+                    transform: translateY(-6px) rotate(-5deg);
+                  }
+                  100% {
+                    transform: translateY(0px) rotate(0deg);
+                  }
+                }
       </style>
     </head>
 
@@ -231,7 +261,7 @@
     <div class="encabezado-musical">
       <img src="pareja_fondo_blanco.png" alt="Pareja bailando" />
       <h1 class="titulo-principal">
-          🥁 <span class="destacado">Colección Sonora</span> de Alejo Gaviria
+          <span class="tambor">🥁</span> <span class="destacado">Colección Sonora</span> <span class="nombre">de Alejo Gaviria</span>
       </h1>
     </div>
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
