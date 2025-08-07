@@ -218,13 +218,12 @@
               transform: scale(1.05);
               }
             }   
-             media screen and (max-width: 600px) {
+             @media screen and (max-width: 600px) {
                 .titulo-principal {
                   font-size: 1.6rem;
                   gap: 6px;
                   padding: 8px 12px;
-                  text-align: center;
-                  flex-direction: column;
+                  flex-wrap: nowrap;
                 }
                 .tambor {
                   font-size: 1.8rem;
@@ -252,6 +251,25 @@
                     transform: translateY(0px) rotate(0deg);
                   }
                 }
+            .bloque-titulo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                line-height: 1.2;
+              }
+              
+              .bloque-titulo .destacado {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: orange;
+                text-transform: uppercase;
+              }
+              
+              .bloque-titulo .nombre {
+                font-style: italic;
+                font-size: 1.2rem;
+                color: gold;
+              }
       </style>
     </head>
 
@@ -260,8 +278,12 @@
     <!-- Encabezado -->
     <div class="encabezado-musical">
       <img src="pareja_fondo_blanco.png" alt="Pareja bailando" />
-      <h1 class="titulo-principal">
-          <span class="tambor">🥁</span> <span class="destacado">Colección Sonora</span> <span class="nombre">de Alejo Gaviria</span>
+       <h1 class="titulo-principal">
+          <span class="tambor">🥁</span>
+          <div class="bloque-titulo">
+            <div class="destacado">COLECCIÓN SONORA</div>
+            <div class="nombre">de Alejo Gaviria</div>
+          </div>
       </h1>
     </div>
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
