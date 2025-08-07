@@ -157,6 +157,7 @@
             .titulo-salsa .texto {
                 font-style: italic;
                 font-weight: normal;
+                text-align: center;
           }
           
          /* Animación suave */
@@ -169,7 +170,14 @@
               transform: scale(1.05);
               opacity: 1;
         }
-      }
+           @media screen and (max-width: 600px) {
+              .titulo-salsa {
+                font-size: 2rem;
+                flex-direction: column;
+                gap: 4px;
+                margin: 30px 0 20px 0;
+              }
+            }
       </style>
     </head>
 
