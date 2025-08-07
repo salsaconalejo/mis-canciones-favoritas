@@ -138,34 +138,36 @@
           font-weight: normal;
         }
            .titulo-salsa {
-            font-family: 'Anton', sans-serif;
-            font-size: 2.8rem;
+            font-family: 'Lobster', cursive; /* cambia a estilo manuscrito */
+            font-size: 3rem;
             color: orange;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 16px;
-            margin: 40px 0 20px 0;
-            text-shadow: 1px 1px 4px black;
-            animation: rebote 2s ease-in-out infinite alternate;
+            gap: 12px;
+            margin: 50px 0 30px 0;
+            text-shadow: 2px 2px 6px black;
+            animation: brillar 2s ease-in-out infinite alternate;
           }
+    
           .titulo-salsa .icono {
               font-size: 2.4rem;
           }
-          .titulo-salsa .texto {
-              font-weight: bold;
-              letter-spacing: 1.2px;
+        
+            .titulo-salsa .texto {
+                font-style: italic;
+                font-weight: normal;
           }
           
          /* Animación suave */
             @keyframes brillar {
-          0% {
-              transform: scale(1);
-              opacity: 0.9;
-        }
-        100% {
-          transform: scale(1.05);
-          opacity: 1;
+                0% {
+                  transform: scale(1);
+                  opacity: 0.9;
+          }
+          100% {
+              transform: scale(1.05);
+              opacity: 1;
         }
       }
       </style>
@@ -182,10 +184,8 @@
     <!-- 🎷 Salsa Herencia Latina 🥁 -->
     <div class="categoria">
       <div class="titulo-salsa">
-          <span class="icono">🎷</span>
-          <span class="texto">Salsa Herencia Latina</span>
-          <span class="icono">🥁</span>
-       </div>
+          🎷 <span class="texto">Salsa Herencia Latina</span> 🥁
+      </div>
       <table>
         <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
         <tr>
