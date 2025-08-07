@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
   <style>
     body {
@@ -135,6 +136,23 @@
         .tube {
           font-weight: normal;
         }
+      .titulo-salsa {
+          font-family: 'Lobster', cursive;
+          font-size: 2.5rem;
+          color: orange;
+          text-shadow: 2px 2px 5px black;
+          margin-top: 40px;
+          margin-bottom: 20px;
+          animation: vibrar 1s infinite alternate;
+        }
+        @keyframes vibrar {
+          from {
+            transform: rotate(-1deg);
+          }
+          to {
+            transform: rotate(1deg);
+          }
+        }
       </style>
     </head>
 
@@ -148,7 +166,7 @@
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
     <!-- 🎷 Salsa 🥁 -->
     <div class="categoria">
-      <h2>🎷 Salsa 🥁</h2>
+      <h2 class="titulo-salsa">🎷 Salsa 🥁</h2>
       <table>
         <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
         <tr>
