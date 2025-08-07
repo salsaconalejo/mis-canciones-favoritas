@@ -115,10 +115,19 @@
 }
 
 .youtube-btn img {
-  height: 24px; /* más pequeño como el logo de GitHub */
+  height: 32px;      /* o prueba con 28px si quieres más grande */
   width: auto;
+  border-radius: 0;  /* sin esquinas redondeadas */
+  display: block;    /* quita espacios extra */
 }
-
+.youtube-btn {
+  display: inline-block;
+  background: none;       /* sin color de fondo */
+  border: none;           /* sin bordes */
+  padding: 4px;           /* solo un poco para clics */
+  margin: 0 auto;
+  text-decoration: none;
+}
 .youtube-btn:hover {
   background-color: #cc0000;
   text-decoration: none;
