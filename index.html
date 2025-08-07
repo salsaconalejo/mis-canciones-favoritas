@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
   <style>
     body {
@@ -58,81 +59,62 @@
     }
 
     td a {
-      color: cyan;
-      font-weight: bold;
       text-decoration: none;
     }
 
     td a:hover {
       text-decoration: underline;
     }
-@media screen and (max-width: 600px) {
-  table {
-    font-size: 2 rem;
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  td a {
-  font-size: 1rem;
-  padding: 6px 10px;
-}
-  th, td {
-    font-size: 1.2rem;
-    padding: 12px 10px;
-    min-width: 140px;
-  }
 
-  h1, h2, h3 {
-    font-size: 1.3rem;
-  }
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+      td a {
+        font-size: 1rem;
+        padding: 6px 10px;
+      }
+      th, td {
+        font-size: 1.2rem;
+        padding: 12px 10px;
+        min-width: 140px;
+      }
+      h1, h2, h3 {
+        font-size: 1.3rem;
+      }
+      .encabezado-musical h1 {
+        font-size: 1.4rem;
+        padding: 0 10px;
+      }
+      .categoria h2 {
+        font-size: 1.2rem;
+      }
+      .encabezado-musical p {
+        font-size: 1rem;
+      }
+    }
 
-  .encabezado-musical h1 {
-    font-size: 1.4rem;
-    padding: 0 10px;
-  }
+    /* ✅ Estilo final del botón de YouTube */
+    .youtube-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: white;
+      background-color: #ff0000;
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
 
-  .categoria h2 {
-    font-size: 1.2rem;
-  }
-
-  .encabezado-musical p {
-    font-size: 1rem;
-  }
-}
-.youtube-btn {
-  display: inline-flex;
-  align-items: center;
-  background-color: #282828;
-  color: white;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 0.85rem;
-  transition: background 0.3s ease;
-  gap: 6px;
-}
-
-youtube-btn img {
-  height: 32px;        /* Aumenta este valor para hacerlo más grande */
-  width: auto;         /* mantiene la proporción */
-  display: block;
-  background: none;
-  border: none;
-}
-.youtube-btn {
-  display: inline-block;
-  background: none;       /* sin color de fondo */
-  border: none;           /* sin bordes */
-  padding: 4px;           /* solo un poco para clics */
-  margin: 0 auto;
-  text-decoration: none;
-}
-.youtube-btn:hover {
-  background-color: #cc0000;
-  text-decoration: none;
-}
+    .youtube-btn:hover {
+      background-color: #cc0000;
+    }
   </style>
 </head>
 
@@ -145,48 +127,49 @@ youtube-btn img {
     </div>
 
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
-  <!-- 🎷 Salsa 🎺  -->
-  <div class="categoria">
-  <h2>🎷 Salsa 🥁</h2>
-  <table>
-    <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
-    
-    <tr>
-      <td>El Gozon</td>
-      <td>Latin Tempo</td>
-      <td>
-        <a class="youtube-btn" href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">
-          <img src="youtube.png" alt="YouTube" /> 
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>No queda nada</td>
-      <td>Luis Pabón</td>
-      <td>
-        <a class="youtube-btn" href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">
-          <img src="youtube.png" alt="YouTube" /> 
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
-<!-- Pie de página -->
-<footer style="background-color: #0b0b0b; padding: 30px 15px; margin-top: 60px;">
-  <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
-    <h3 style="color: #f0c674; font-size: 1rem; text-align: center;">📜 Derechos de Autor</h3>
-    <p style="font-size: 0.85rem;">
-      Este portafolio ha sido desarrollado por Héctor Alejandro Gaviria Marín con fines exclusivamente profesionales.
-    </p>
-    <p style="margin-top: 10px; font-size: 0.85rem;">
-      Todos los proyectos, textos y diseños presentados en este sitio web son de autoría propia.  
-      Queda estrictamente prohibida su copia, modificación o distribución sin previa autorización escrita.
-    </p>
-    <p style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #888;">
-      © 2025 <strong style="color: #ccc;">Héctor Alejandro Gaviria Marín</strong>. Todos los derechos reservados.
-    </p>
+
+    <!-- 🎷 Salsa 🥁 -->
+    <div class="categoria">
+      <h2>🎷 Salsa 🥁</h2>
+      <table>
+        <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
+        <tr>
+          <td>El Gozon</td>
+          <td>Latin Tempo</td>
+          <td>
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">
+              <i class="fab fa-youtube"></i> Ver Video
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>No queda nada</td>
+          <td>Luis Pabón</td>
+          <td>
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=w1W6PM_K7JY" target="_blank">
+              <i class="fab fa-youtube"></i> Ver Video
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Pie de página -->
+    <footer style="background-color: #0b0b0b; padding: 30px 15px; margin-top: 60px;">
+      <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
+        <h3 style="color: #f0c674; font-size: 1rem; text-align: center;">📜 Derechos de Autor</h3>
+        <p style="font-size: 0.85rem;">
+          Este portafolio ha sido desarrollado por Héctor Alejandro Gaviria Marín con fines exclusivamente profesionales.
+        </p>
+        <p style="margin-top: 10px; font-size: 0.85rem;">
+          Todos los proyectos, textos y diseños presentados en este sitio web son de autoría propia.  
+          Queda estrictamente prohibida su copia, modificación o distribución sin previa autorización escrita.
+        </p>
+        <p style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #888;">
+          © 2025 <strong style="color: #ccc;">Héctor Alejandro Gaviria Marín</strong>. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
   </div>
-</footer>
 </body>
 </html>
-
