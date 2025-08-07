@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
   <style>
     body {
@@ -136,23 +137,37 @@
         .tube {
           font-weight: normal;
         }
-      .titulo-salsa {
-          font-family: 'Lobster', cursive;
-          font-size: 2.5rem;
-          color: orange;
-          text-shadow: 2px 2px 5px black;
-          margin-top: 40px;
-          margin-bottom: 20px;
-          animation: vibrar 1s infinite alternate;
-        }
-        @keyframes vibrar {
-          from {
-            transform: rotate(-1deg);
+           .titulo-salsa {
+            font-family: 'Anton', sans-serif;
+            font-size: 2.8rem;
+            color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 40px 0 20px 0;
+            text-shadow: 1px 1px 4px black;
+            animation: rebote 2s ease-in-out infinite alternate;
           }
-          to {
-            transform: rotate(1deg);
+          .titulo-salsa .icono {
+              font-size: 2.4rem;
           }
+          .titulo-salsa .texto {
+              font-weight: bold;
+              letter-spacing: 1.2px;
+          }
+          
+         /* Animación suave */
+            @keyframes brillar {
+          0% {
+              transform: scale(1);
+              opacity: 0.9;
         }
+        100% {
+          transform: scale(1.05);
+          opacity: 1;
+        }
+      }
       </style>
     </head>
 
@@ -164,9 +179,13 @@
       <h1>🎵 Portafolio Musical de Alejo Gaviria 🎵</h1>
     </div>
     <p>Un viaje musical por mis géneros favoritos. Haz clic y escucha directo desde YouTube 🔊</p>
-    <!-- 🎷 Salsa 🥁 -->
+    <!-- 🎷 Salsa Herencia Latina 🥁 -->
     <div class="categoria">
-      <h2 class="titulo-salsa">🎷 Salsa 🥁</h2>
+      <div class="titulo-salsa">
+          <span class="icono">🎷</span>
+          <span class="texto">Salsa Herencia Latina</span>
+          <span class="icono">🥁</span>
+       </div>
       <table>
         <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
         <tr>
