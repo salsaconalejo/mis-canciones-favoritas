@@ -43,7 +43,6 @@
     .categoria h2 {
       color: orange;
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -55,6 +54,11 @@
       padding: 10px;
       text-align: left;
     }
+
+     .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
 
     th {
       background-color: #111;
@@ -71,19 +75,17 @@
 
     /* Responsive */
     @media screen and (max-width: 600px) {
-      table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-      }
+        table {
+            table-layout: fixed;
+            width: 100%;
+          }
       td a {
         font-size: 1rem;
         padding: 6px 10px;
       }
-      th, td {
-        font-size: 1.2rem;
-        padding: 12px 10px;
-        min-width: 140px;
+       td, th {
+        padding: 6px 8px;
+        word-wrap: break-word;
       }
       h1, h2, h3 {
         font-size: 1.3rem;
@@ -99,44 +101,47 @@
         font-size: 1rem;
       }
     }
+       @media (max-width: 600px) {
+          .btn-youtube {
+            font-size: 0;
+          }
+          .btn-youtube::before {
+            content: "▶";
+            font-size: 1rem;
+          }
+        }
 
-    /* ✅ Estilo final del botón de YouTube */
-        .youtube-btn {
+      .youtube-btn {
           display: inline-flex;
           align-items: center;
-          gap: 2px; /* nuevo: reduce separación entre ícono y texto */
-          background-color: #ff0000;
-          color: white;
-          font-size: 0.9rem;
-          font-weight: bold;
-          font-family: 'Roboto', sans-serif; /* <- corregido */
-          padding: 6px 12px;
-          border-radius: 6px;
           text-decoration: none;
-          transition: background 0.3s ease;
-          border: none;
+          font-weight: bold;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          border-radius: 4px;
+          overflow: hidden;
         }
-        
+          .youtube-btn i {
+            color: red;
+            font-size: 16px;
+            margin-right: 6px;
+          }
+          .youtube-btn .you {
+                color: white;
+                background-color: transparent;
+                padding: 4px 2px;
+              }
+              
+              .youtube-btn .tube {
+                color: white;
+                background-color: red;
+                padding: 4px 6px;
+              }
         .youtube-btn:hover {
-          background-color: #cc0000;
-          color: white;
-        }
+              opacity: 0.85;
+            }
         
-        .youtube-btn .you {
-          font-weight: bold;
-        }
         
-        .youtube-btn .tube {
-          margin-left: 1px; /* 👈 aquí ajustas la separación */
-          font-weight: bold;
-        }
-    .you {
-      font-weight: bold;
-    }
-
-        .tube {
-          font-weight: normal;
-        }
           .titulo-salsa {
             font-family: 'Lobster', cursive;
             font-size: 3rem;
@@ -155,7 +160,6 @@
             overflow-x: auto;
             }
           }
-    
           .titulo-salsa .icono {
               font-size: 2.4rem;
           }
@@ -293,8 +297,13 @@
             <span class="icono">🎷</span>
             <span class="texto">Salsa Herencia Latina</span>
       </div>
+     <div class="table-wrapper"> 
       <table>
-        <tr><th>Canción</th><th>Artista</th><th>Enlace</th></tr>
+        <tr>
+          <th>Canción</th>
+          <th>Artista</th>
+          <th>Enlace</th>
+        </tr>
         <tr>
           <td>Avísale a Mi Contrario</td>
           <td>Tito Rodriguez</td>
@@ -354,16 +363,17 @@
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
+         </tr> 
           <tr>
-          <td>Según el Color</td>
-          <td>Rubén Blades·Willie Colón</td>
-          <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=FyVd25BRyeY&list=RDFyVd25BRyeY&start_radio=1&ab_channel=Rub%C3%A9nBlades-Topic" target="_blank">
-                <i class="fab fa-youtube"></i>
-                <span class="you">You</span><span class="tube">Tube</span>
-            </a>
-          </td> 
-           <tr>
+            <td>Según el Color</td>
+            <td>Rubén Blades·Willie Colón</td>
+            <td>
+              <a class="youtube-btn" href="https://www.youtube.com/watch?v=FyVd25BRyeY&list=RDFyVd25BRyeY&start_radio=1&ab_channel=Rub%C3%A9nBlades-Topic" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                  <span class="you">You</span><span class="tube">Tube</span>
+              </a>
+            </td> 
+          </tr>
           <tr>
           <td>El Artista Famoso</td>
           <td>Orquesta Inmensidad</td>
@@ -373,7 +383,8 @@
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
           </td>
-           <tr>   
+          </tr>
+          <tr>   
           <td>Estas Equivocado</td>
           <td>Roberto Roena</td>
           <td>
@@ -487,7 +498,7 @@
           <td>Un Inmortal</td>
           <td>Kike Cruz y la Orquesta Royal</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=HL45BEFcogM" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=HL45BEFcogM" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
@@ -517,7 +528,7 @@
           <td>Trampas</td>
           <td>Renzo Padilla</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=Z-fzYn6SJaQ&ab_channel=GERSONSALSAPRODUCCIONES" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=Z-fzYn6SJaQ&ab_channel=GERSONSALSAPRODUCCIONES" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
@@ -527,7 +538,7 @@
           <td>Todo el Mundo Escucha</td>
           <td>Tabaco y Sus Metales</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=CdjAbo3FR_I&list=RDCdjAbo3FR_I&start_radio=1&ab_channel=TabacoySusMetales-Topic" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=CdjAbo3FR_I&list=RDCdjAbo3FR_I&start_radio=1&ab_channel=TabacoySusMetales-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
@@ -537,7 +548,7 @@
           <td>La Candela</td>
           <td>Típica 73</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=Uupu8D4_rEQ&list=RDUupu8D4_rEQ&start_radio=1&ab_channel=T%C3%ADpica73-Topic" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=Uupu8D4_rEQ&list=RDUupu8D4_rEQ&start_radio=1&ab_channel=T%C3%ADpica73-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
@@ -547,7 +558,7 @@
           <td>Por Mas Que Quiera</td>
           <td>El Gran Combo de Puerto Rico</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=13cAn86TiZM&list=RD13cAn86TiZM&start_radio=1&ab_channel=ElGranCombodePuertoRico-Topic" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=13cAn86TiZM&list=RD13cAn86TiZM&start_radio=1&ab_channel=ElGranCombodePuertoRico-Topic" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
@@ -557,7 +568,7 @@
           <td>El Faisán</td>
           <td>Johnny Pacheco</td>
           <td>
-            <a class="youtube-btn" href="https://www.youtube.com/watch?v=t9jj9NsQR2U&list=RDt9jj9NsQR2U&start_radio=1&ab_channel=FaniaRecords" target="_blank"">
+            <a class="youtube-btn" href="https://www.youtube.com/watch?v=t9jj9NsQR2U&list=RDt9jj9NsQR2U&start_radio=1&ab_channel=FaniaRecords" target="_blank">
                 <i class="fab fa-youtube"></i>
                 <span class="you">You</span><span class="tube">Tube</span>
             </a>
