@@ -8,214 +8,240 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <title>♫ Portafolio Musical de Alejo Gaviria ♫</title>
-      <style>
+  <style>
   body {
-    background-color: black;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .encabezado-musical img {
-    width: 80px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .encabezado-musical h1 {
-    color: gold;
-    font-size: 2rem;
-    margin: 10px 0;
-  }
-
-  .categoria { margin-top: 40px; }
-  .categoria h2 { color: orange; }
-
-  /* ==== TABLA ==== */
-  .table-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  table th, table td {
-    border: 1px solid #2a2a2a;
-    padding: 10px 12px;
-    text-align: left;
-  }
-
-  table th {
-    background-color: #1b1b1b;
-    color: gold;
-    font-weight: 700;
-    letter-spacing: .2px;
-  }
-
-  /* Encabezado fijo */
-  .table-wrapper table thead th {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-
-  /* Hover sutil */
-  table tr:hover td { background: #171717; }
-
-  /* Anchos de columnas (desktop) */
-  table th:nth-child(1), table td:nth-child(1) { width: 40%; }
-  table th:nth-child(2), table td:nth-child(2) { width: 40%; }
-  table th:nth-child(3), table td:nth-child(3) { width: 20%; white-space: nowrap; }
-
-  /* Enlaces dentro de celdas */
-  td a { text-decoration: none; }
-  td a:hover { text-decoration: underline; }
+          background-color: black;
+          color: white;
+          font-family: 'Roboto', sans-serif;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+        }
+      
+        .container {
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+      
+        .encabezado-musical img {
+          width: 80px;
+          display: block;
+          margin: 0 auto;
+        }
+      
+        .encabezado-musical h1 {
+          color: gold;
+          font-size: 2rem;
+          margin: 10px 0;
+        }
+      
+        .categoria { margin-top: 40px; }
+        .categoria h2 { color: orange; }
+      
+        /* ==== TABLA ==== */
+        .table-wrapper {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+      
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          margin-top: 15px;
+        }
+      
+        table th, table td {
+          border: 1px solid #2a2a2a;
+          padding: 10px 12px;
+          text-align: left;
+        }
+      
+        table th {
+          background-color: #1b1b1b;
+          color: gold;
+          font-weight: 700;
+          letter-spacing: .2px;
+        }
+      
+        /* Encabezado fijo */
+        .table-wrapper table thead th {
+          position: sticky;
+          top: 0;
+          z-index: 1;
+        }
+      
+        /* Hover sutil */
+        table tr:hover td { background: #171717; }
+      
+        /* Anchos de columnas (desktop) */
+        table th:nth-child(1), table td:nth-child(1) { width: 40%; }
+        table th:nth-child(2), table td:nth-child(2) { width: 40%; }
+        table th:nth-child(3), table td:nth-child(3) { width: 20%; white-space: nowrap; }
+      
+        /* Enlaces dentro de celdas */
+        td a { text-decoration: none; }
+        td a:hover { text-decoration: underline; }
 
   /* ===== Botón YouTube ===== */
-  .youtube-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    border-radius: 6px;
-  }
-  .youtube-btn i {
-    color: red;
-    font-size: 16px;
-    transform: translateY(1px);
-  }
-  .youtube-btn .you {
-    color: white;
-    background-color: transparent;
-    padding: 4px 3px;
-  }
-  .youtube-btn .tube {
-    color: white;
-    background-color: red;
-    padding: 4px 7px;
-    border-radius: 4px;
-  }
-  .youtube-btn:hover { opacity: 0.85; }
+        .youtube-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          text-decoration: none;
+          font-weight: bold;
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          line-height: 1;
+          border-radius: 6px;
+        }
+        .youtube-btn i {
+          color: red;
+          font-size: 16px;
+          transform: translateY(1px);
+        }
+        .youtube-btn .you {
+          color: white;
+          background-color: transparent;
+          padding: 4px 3px;
+        }
+        .youtube-btn .tube {
+          color: white;
+          background-color: red;
+          padding: 4px 7px;
+          border-radius: 4px;
+        }
+        .youtube-btn:hover { opacity: 0.85; }
+      
+        /* Accesibilidad: texto solo para lectores */
+        .sr-only{
+          position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+          overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+        }
+      
+        /* ===== Títulos y animaciones ===== */
+        .titulo-salsa {
+          font-family: 'Lobster', cursive;
+          font-size: 3rem;
+          color: orange;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 12px;
+          margin: 50px 0 30px 0;
+          text-shadow: 2px 2px 6px black;
+          animation: brillar 2s ease-in-out infinite alternate;
+          padding: 10px 20px;
+          border-radius: 10px;
+          background-color: rgba(255,165,0,0.08);
+          box-shadow: 0 0 10px rgba(255,165,0,0.2);
+          overflow-x: auto;
+        }
+        .titulo-salsa .icono { font-size: 2.4rem; }
+        .titulo-salsa .texto {
+          font-style: italic;
+          font-weight: normal;
+          text-align: center;
+          white-space: nowrap;
+        }
+      
+        @keyframes brillar {
+          0% { transform: translateY(0) scale(1); }
+          50% { transform: translateY(-12px) scale(1.07); }
+          100% { transform: translateY(0) scale(1); }
+        }
+      
+        .titulo-principal {
+          font-family: 'Lobster', cursive;
+          font-weight: normal;
+          font-size: 2.4rem;
+          color: orange;
+          text-shadow: 2px 2px 6px black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin: 20px 0 10px 0;
+          animation: zoomin 2s ease-in-out infinite alternate;
+          background-color: rgba(255, 165, 0, 0.08);
+          box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+          padding: 10px 20px;
+          border-radius: 12px;
+          flex-wrap: wrap;
+        }
+        .destacado { color: orange; font-weight: bold; text-transform: uppercase; }
+        @keyframes zoomin { 0%{transform:scale(1);} 100%{transform:scale(1.05);} }
+        .titulo-principal span.destacado { margin-left: 5px; }
+      
+        .nombre { font-style: italic; color: gold; }
+      
+        .tambor { font-size: 2.2rem; animation: rebote-tambor 2.5s ease-in-out infinite; }
+        @keyframes rebote-tambor {
+          0% { transform: translateY(0) rotate(0); }
+          50% { transform: translateY(-6px) rotate(-5deg); }
+          100% { transform: translateY(0) rotate(0); }
+        }
+      
+        .bloque-titulo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          line-height: 1.2;
+        }
+        .bloque-titulo .destacado {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: orange;
+          text-transform: uppercase;
+        }
+        .bloque-titulo .nombre { font-style: italic; font-size: 1.2rem; color: gold; }
+      
+        /* ===== Responsive ===== */
+        @media screen and (max-width: 600px) {
+          table { table-layout: fixed; width: 100%; }
+          td, th { padding: 6px 8px; word-wrap: break-word; }
+          td a { font-size: 1rem; padding: 6px 10px; }
+      
+          h1, h2, h3 { font-size: 1.3rem; }
+          .encabezado-musical h1 { font-size: 1.4rem; padding: 0 10px; }
+          .categoria h2 { font-size: 1.2rem; }
+      
+          .titulo-salsa { font-size: 2rem; gap: 4px; margin: 30px 0 20px 0; }
+          .titulo-principal { font-size: 1.6rem; gap: 6px; padding: 8px 12px; flex-wrap: nowrap; }
+          .tambor { font-size: 1.8rem; }
+        }
+      
+        /* ==== Solo ícono en el botón YouTube (móvil) ==== */
+        @media (max-width: 520px) {
+          table th:nth-child(3),
+          table td:nth-child(3) {
+            width: 84px;
+            min-width: 84px;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .youtube-btn {
+            gap: 0;
+            font-size: 0;
+            padding: 4px;
+            border-radius: 6px;
+          }
+          .youtube-btn .you,
+          .youtube-btn .tube { display: none; }
+          .youtube-btn i { font-size: 18px; transform: translateY(1px); }
+        }
+      
+        @media (max-width: 360px) {
+          table th:nth-child(3),
+          table td:nth-child(3) {
+            width: 72px;
+            min-width: 72px;
+          }
+          .youtube-btn i { font-size: 16px; }
+        }
+      </style>
 
-  /* Accesibilidad: texto solo para lectores */
-  .sr-only{
-    position:absolute;width:1px;height:1px;padding:0;margin:-1px;
-    overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
-  }
-
-  /* ===== Títulos y animaciones que ya usas ===== */
-  .titulo-salsa {
-    font-family: 'Lobster', cursive;
-    font-size: 3rem;
-    color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 50px 0 30px 0;
-    text-shadow: 2px 2px 6px black;
-    animation: brillar 2s ease-in-out infinite alternate;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: rgba(255,165,0,0.08);
-    box-shadow: 0 0 10px rgba(255,165,0,0.2);
-    overflow-x: auto;
-  }
-  .titulo-salsa .icono { font-size: 2.4rem; }
-  .titulo-salsa .texto {
-    font-style: italic;
-    font-weight: normal;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  @keyframes brillar {
-    0% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-12px) scale(1.07); }
-    100% { transform: translateY(0) scale(1); }
-  }
-
-  .titulo-principal {
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
-    font-size: 2.4rem;
-    color: orange;
-    text-shadow: 2px 2px 6px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0 10px 0;
-    animation: zoomin 2s ease-in-out infinite alternate;
-    background-color: rgba(255, 165, 0, 0.08);
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 12px;
-    flex-wrap: wrap;
-  }
-  .destacado { color: orange; font-weight: bold; text-transform: uppercase; }
-  @keyframes zoomin { 0%{transform:scale(1);} 100%{transform:scale(1.05);} }
-  .titulo-principal span.destacado { margin-left: 5px; }
-
-  .nombre { font-style: italic; color: gold; }
-
-  .tambor { font-size: 2.2rem; animation: rebote-tambor 2.5s ease-in-out infinite; }
-  @keyframes rebote-tambor {
-    0% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-6px) rotate(-5deg); }
-    100% { transform: translateY(0) rotate(0); }
-  }
-
-  .bloque-titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1.2;
-  }
-  .bloque-titulo .destacado {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: orange;
-    text-transform: uppercase;
-  }
-  .bloque-titulo .nombre { font-style: italic; font-size: 1.2rem; color: gold; }
-
-  /* ===== Responsive ===== */
-  @media screen and (max-width: 600px) {
-    table { table-layout: fixed; width: 100%; }
-    td, th { padding: 6px 8px; word-wrap: break-word; }
-    td a { font-size: 1rem; padding: 6px 10px; }
-
-    h1, h2, h3 { font-size: 1.3rem; }
-    .encabezado-musical h1 { font-size: 1.4rem; padding: 0 10px; }
-    .categoria h2 { font-size: 1.2rem; }
-
-    .titulo-salsa { font-size: 2rem; gap: 4px; margin: 30px 0 20px 0; }
-  }
-
-  @media screen and (max-width: 600px) {
-    .titulo-principal { font-size: 1.6rem; gap: 6px; padding: 8px 12px; flex-wrap: nowrap; }
-    .tambor { font-size: 1.8rem; }
-  }
-</style>
-
-    </head>
+</head>
 
 <body>
   <div class="container">
