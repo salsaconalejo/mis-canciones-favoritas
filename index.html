@@ -1699,57 +1699,68 @@
             </tr> 
       </table>
     </div>
-   <!-- Pie de página -->
-<footer style="background-color: #0b0b0b; padding: 25px 15px; margin-top: 40px;">
-  <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
-
-    <!-- Línea dorada -->
-          <div style="height: 2px; background: linear-gradient(90deg, #f0c674, #ffdb58, #f0c674); margin-bottom: 10px;"></div>
-      
-          <!-- Título con candado animado -->
-          <h3 style="color: #f0c674; font-size: 1rem; display: flex; align-items: center; gap: 6px; margin: 0;">
-           <span id="candado" style="font-size: 1.6rem; transition: transform 0.3s ease;">🔒</span>
-           Derechos de Autor
-          </h3>
-              <style>
-              @keyframes brillo {
-                0%, 100% {
-                  text-shadow: 0 0 4px #f0c674, 0 0 8px #f0c674;
-                }
-                50% {
-                  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
-                }
-              }
-              </style>
-          <!-- Texto -->
-          <p style="font-size: 0.85rem; line-height: 1.5; margin-top: 10px;">
-            Este portafolio ha sido desarrollado por <strong>Héctor Alejandro Gaviria Marín</strong> con fines exclusivamente profesionales.
-          </p>
-          <p style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">
-            Todos los proyectos, textos y diseños presentados en este sitio web son de autoría propia.  
-            Queda estrictamente prohibida su copia, modificación o distribución sin previa autorización escrita.
-          </p>
-      
-          <!-- Línea final -->
-          <p style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #888;">
-            © 2025 <strong style="color: #ccc;">Héctor Alejandro Gaviria Marín</strong>. Todos los derechos reservados.
-          </p>
-        </div>
-      </footer>
-      
-      <!-- Script para animar el candado -->
-      <script>
-        const candado = document.getElementById("candado");
-        let cerrado = true;
-      
-         setInterval(() => {
-          candado.style.transform = "scale(1.2)";
-          setTimeout(() => {
-            candado.textContent = cerrado ? "🔓" : "🔒";
-            candado.style.transform = "scale(1)";
-            cerrado = !cerrado;
-          }, 200);
-        }, 1500);
-      </script>
-   
-
+    <!-- Pie de página -->
+          <footer style="background-color: #0b0b0b; padding: 25px 15px; margin-top: 40px;">
+            <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
+          
+              <!-- Línea dorada -->
+              <div style="height: 2px; background: linear-gradient(90deg, #f0c674, #ffdb58, #f0c674); margin-bottom: 10px;"></div>
+              
+              <!-- Título con candado animado (brillo + abrir/cerrar) -->
+              <h3 style="color: #f0c674; font-size: 1rem; display: flex; align-items: center; gap: 8px; margin: 0;">
+                <span id="candado" class="candado" style="font-size: 2rem;">🔒</span>
+                Derechos de Autor
+              </h3>
+          
+              <!-- Texto -->
+              <p style="font-size: 0.85rem; line-height: 1.5; margin-top: 10px;">
+                Este portafolio ha sido desarrollado por <strong>Héctor Alejandro Gaviria Marín</strong> con fines exclusivamente profesionales.
+              </p>
+              <p style="margin-top: 10px; font-size: 0.85rem; line-height: 1.5;">
+                Todos los proyectos, textos y diseños presentados en este sitio web son de autoría propia.  
+                Queda estrictamente prohibida su copia, modificación o distribución sin previa autorización escrita.
+              </p>
+          
+              <!-- Línea final -->
+              <p style="margin-top: 15px; text-align: center; font-size: 0.8rem; color: #888;">
+                © 2025 <strong style="color: #ccc;">Héctor Alejandro Gaviria Marín</strong>. Todos los derechos reservados.
+              </p>
+            </div>
+          </footer>
+          
+          <!-- Estilos del brillo (puedes mover esto al <head> si prefieres) -->
+          <style>
+          @keyframes brillo {
+            0%, 100% {
+              text-shadow: 0 0 6px #ffd700, 0 0 12px #ffd700, 0 0 18px #ffd700;
+            }
+            50% {
+              text-shadow: 0 0 12px #ffeb3b, 0 0 24px #ffeb3b, 0 0 36px #ffeb3b;
+            }
+          }
+          .candado {
+            animation: brillo 1.6s ease-in-out infinite;
+            display: inline-block; /* para que el scale funcione bien */
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .candado { animation: none; }
+          }
+          </style>
+          
+          <!-- Script para abrir/cerrar + pequeño zoom en cada cambio -->
+          <script>
+            const candado = document.getElementById("candado");
+            let cerrado = true;
+          
+            setInterval(() => {
+              // zoom suave de aviso
+              candado.style.transition = "transform 200ms ease";
+              candado.style.transform = "scale(1.2)";
+          
+              setTimeout(() => {
+                candado.textContent = cerrado ? "🔓" : "🔒";
+                candado.style.transform = "scale(1)";
+                cerrado = !cerrado;
+              }, 200);
+            }, 1500);
+          </script>
