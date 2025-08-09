@@ -1708,7 +1708,8 @@
       
           <!-- Título con candado animado -->
           <h3 style="color: #f0c674; font-size: 1rem; display: flex; align-items: center; gap: 6px; margin: 0;">
-            <span id="candado">🔒</span> Derechos de Autor
+           <span id="candado" style="font-size: 1.6rem; transition: transform 0.3s ease;">🔒</span>
+           Derechos de Autor
           </h3>
       
           <!-- Texto -->
@@ -1732,10 +1733,14 @@
         const candado = document.getElementById("candado");
         let cerrado = true;
       
-        setInterval(() => {
-          candado.textContent = cerrado ? "🔓" : "🔒"; // Alterna candado abierto/cerrado
-          cerrado = !cerrado;
-        }, 1500); // Cambia cada 1.5 segundos
+         setInterval(() => {
+          candado.style.transform = "scale(1.2)";
+          setTimeout(() => {
+            candado.textContent = cerrado ? "🔓" : "🔒";
+            candado.style.transform = "scale(1)";
+            cerrado = !cerrado;
+          }, 200);
+        }, 1500);
       </script>
    
 
