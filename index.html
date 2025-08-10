@@ -2160,16 +2160,31 @@
     </div>  <!-- .table-wrapper -->
    </div>   <!-- .categoria -->
 </div>       <!-- .container -->
-         <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const filas = document.querySelectorAll("#tabla-salsa tbody tr").length;
-              const contadorElemento = document.getElementById("contador-salsa");
-              if (contadorElemento) {
-                contadorElemento.textContent = filas;
-              }
-            });
-            </script>
-                       
+      <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const filas = document.querySelectorAll("table tr");
+                let contador = 0;
+            
+                filas.forEach(fila => {
+                  const celdas = fila.querySelectorAll("td");
+                  // Cuenta solo si la primera celda tiene texto y no está vacía
+                  if (celdas.length > 0 && celdas[0].textContent.trim() !== "") {
+                    contador++;
+                  }
+                });
+            
+                // Inserta el número encima de la celda "Canción"
+                const cabecera = document.querySelector("table thead tr");
+                const nuevaFila = document.createElement("tr");
+                const celda = document.createElement("th");
+                celda.colSpan = 3;
+                celda.style.textAlign = "center";
+                celda.style.color = "#ffb84d";
+                celda.textContent = `${contador} canciones`;
+                nuevaFila.appendChild(celda);
+                cabecera.parentNode.insertBefore(nuevaFila, cabecera);
+              });
+    </script>                   
     <!-- Pie de página -->
           <footer style="background-color: #0b0b0b; padding: 25px 15px; margin-top: 40px;">
             <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
