@@ -262,6 +262,12 @@
               .youtube-btn .tube { display: none; }  /* oculta “You/Tube” */
               .youtube-btn i { font-size: 18px; transform: translateY(1px); }
             }
+            .titulo-salsa .contador-salsa {
+                font-size: 0.85rem; /* más pequeño */
+                opacity: 0.8;       /* más tenue */
+                margin-left: auto;  /* empuja el contador a la derecha */
+                color: #ffb84d;     /* mismo tono dorado */
+              }
       </style>
 
 </head>
@@ -284,7 +290,10 @@
       <div class="titulo-salsa">
             <span class="icono">🎷</span>
             <span class="texto">Salsa Herencia Latina</span>
-            <small>(<span id="contador-salsa">0</span> canciones)</small>
+      </div>  
+            <small class="contador-salsa">(<span id="contador-salsa">0</span> canciones)</small>
+              (<span id="contador-salsa">0</span> canciones)
+           </small>
       </div>
       <div class="table-wrapper">
         <table id="tabla-salsa">
