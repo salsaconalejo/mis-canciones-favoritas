@@ -265,7 +265,6 @@
       </style>
 
 </head>
-
 <body>
   <div class="container">
     <!-- Encabezado -->
@@ -275,7 +274,7 @@
           <span class="tambor">🥁</span>
           <div class="bloque-titulo">
             <div class="destacado">COLECCIÓN SONORA</div>
-            <div class="nombre">de Alejo Gaviria</div>
+            <div class="nombre">de Alejandro Gaviria</div>
           </div>
       </h1>
     </div>
@@ -285,9 +284,10 @@
       <div class="titulo-salsa">
             <span class="icono">🎷</span>
             <span class="texto">Salsa Herencia Latina</span>
+            <small>(<span id="contador-salsa">0</span> canciones)</small>
       </div>
       <div class="table-wrapper">
-          <table>
+        <table id="tabla-salsa">
             <caption class="sr-only">
               Salsa Herencia Latina — lista de canciones, artista y enlace
             </caption>
@@ -2145,8 +2145,26 @@
                 </a>
               </td>
             </tr> 
+        </tbody>    
       </table>
-    </div>
+    </div>  <!-- .table-wrapper -->
+   </div>   <!-- .categoria -->
+</div>       <!-- .container -->
+  <script>
+          (function () {
+            const tabla = document.getElementById('tabla-salsa');
+            if (!tabla) return;
+          
+            // Cuenta solo filas válidas dentro de <tbody>
+           const filasValidas = Array.from(tabla.querySelectorAll('tbody tr')).filter(tr =>
+              tr.querySelectorAll('td').length > 0 &&
+              tr.textContent.trim() !== ''
+            );
+            const contador = document.getElementById('contador-salsa');
+                if (contador) contador.textContent = String(filasValidas.length);
+            })();
+    </script>
+                       
     <!-- Pie de página -->
           <footer style="background-color: #0b0b0b; padding: 25px 15px; margin-top: 40px;">
             <div style="text-align: justify; color: #bcbcbc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 700px; margin: 0 auto;">
